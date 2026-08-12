@@ -1,5 +1,7 @@
 # SynergyChat
 
+This project is used in the [Learn Kubernetes](https://www.boot.dev/courses/learn-kubernetes) course on [Boot.dev](https://www.boot.dev).
+
 SynergyChat is not only the best workforce chatting tool, but the best analytics engine. SynergyChat is powered by several microservies:
 
 * "web" - The web frontend. This small micro-service serves static HTML, CSS, and JavaScript files that form the shell of the application.
