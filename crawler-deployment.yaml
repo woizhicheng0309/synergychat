@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: synergychat-crawler
+  labels:
+    app: synergychat-crawler
+spec: # this is the spec of deployment
+  replicas: 1
+  selector: # selector is used to find the pods that the deployment manages
+    matchLabels:
+      app: synergychat-crawler
+  template: # this describe the pod that Deployment will create
+    metadata:
+      labels:
+        app: synergychat-crawler
+    spec: # this is the pod spec for each pod created by the Deployment
+      containers:
+      - name: synergychat-crawler
+        image: bootdotdev/synergychat-crawler:latest
+        envFrom: # use envFrom keyword to prevent repetitive env keys
+          - configMapRef:
+              name: synergychat-crawler-configmap
