@@ -25,10 +25,10 @@ spec:
       maxSurge: 25%
       maxUnavailable: 25%
     type: RollingUpdate
-  template:
+  template: # this is where the pod template is defined
     metadata:
       labels:
-        app: synergychat-web
+        app: synergychat-web 
     spec:
       containers:
       - image: docker.io/bootdotdev/synergychat-web:latest
