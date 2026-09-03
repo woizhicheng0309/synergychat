@@ -1,0 +1,9 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: GatewayClass
+metadata:
+  name: app-gatewayclass
+spec:
+  controllerName: gateway.envoyproxy.io/gatewayclass-controller
+
+# 1. Any Gateway we create has to be associated with a GatewayClass
+# 2. The controllerName is set to the one created while installing the Envoy Gateway
