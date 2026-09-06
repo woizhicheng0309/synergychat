@@ -5,3 +5,6 @@ metadata:
 data:
   CRAWLER_PORT : "8080"
   CRAWLER_KEYWORDS: "love,hate,joy,sadness,anger,disgust,fear,surprise"
+  CRAWLER_DB_PATH: "/cache/db"
+  CRAWLER_PORT2 : "8081"
+  CRAWLER_PORT3 : "8082"
